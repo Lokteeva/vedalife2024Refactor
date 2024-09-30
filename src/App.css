@@ -29,6 +29,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: var(--pink);
 }
 :root {
   --pink: rgb(208, 9, 128);

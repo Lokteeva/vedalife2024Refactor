@@ -1,4 +1,5 @@
 import './App.css'
+import { Cooking, Description, Festival, Footer, Header, HomeBaner, Hram, Mandarin, NewYear, Price, ProgrammFestival, Recomendation, Registraition, Reviews, Slider1, Slider2, Speakers, Vedalife, Video } from './components'
 
 function App() {
 
