@@ -4,8 +4,26 @@ function App() {
 
   return (
     <>
-      hello
-    </>
+    <Header />
+    <HomeBaner />
+    <Vedalife />
+    <Video />
+    <NewYear />
+    <Festival />
+    <Mandarin />
+    <ProgrammFestival />
+    <Speakers />
+    <Recomendation />
+    <Description />
+    <Cooking />
+    <Reviews />
+    <Hram />
+    <Slider1 />
+    <Slider2 />
+    <Price />
+    <Registraition />
+    <Footer />
+  </>
   )
 }
 
