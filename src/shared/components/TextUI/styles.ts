@@ -24,8 +24,6 @@ export const Text = styled.span<{
   font-weight: ${(props) => props.bold && "bold"};
 
   &:hover {
-    scale: ${(props) => props.hover && "1.1"};
-    transition: ${(props) => props.hover && 'scale 0.3s ease-in'};
     cursor: ${(props) => props.hover && 'pointer'};
     text-shadow:  ${(props) => props.hover && "1px 1px 10px var(--white)"};
   }

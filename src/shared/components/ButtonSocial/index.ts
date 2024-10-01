@@ -1,2 +1,2 @@
 export * from './ButtonSocial';
-export * from './TextUI';
+export * from '../TextUI';

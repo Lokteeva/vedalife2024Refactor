@@ -23,3 +23,7 @@ export enum DiscountedCost {
   B6 = '42 000',
   B7 = '32 000',
 }
+
+
+export const linkWA = 'https://wa.me/79631626238'
+export const linkTelega = 'https://t.me/aana_ambika'
