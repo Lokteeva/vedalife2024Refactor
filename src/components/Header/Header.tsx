@@ -1,4 +1,12 @@
-import { ButtonSocial, IconInstagram, IconTelegram, IconVK, IconWA, Row, TextUI } from '../../shared';
+import {
+  ButtonSocial,
+  IconInstagram,
+  IconTelegram,
+  IconVK,
+  IconWA,
+  Row,
+  TextUI,
+} from '../../shared';
 import * as Styled from './styles';
 
 export const Header = () => {
@@ -6,7 +14,7 @@ export const Header = () => {
     <>
       <Styled.Line />
       <Styled.WrapperHeader>
-        <Row cg={16}>
+        <Row  ml={50} gap={16}>
           <ButtonSocial link="https://vk.com/vedalife_sochi">
             <IconVK />
           </ButtonSocial>
@@ -19,22 +27,31 @@ export const Header = () => {
           <ButtonSocial>
             <IconTelegram />
           </ButtonSocial>
-          <a href="tel:+79631626238">+7 963 162 6238</a>
-          <Styled.Nav>
-            <ul>
-              <li>
-                <a href="#footer">о нас</a>
-              </li>
-              <li>
-                <a href="#newYear">фестиваль</a>
-              </li>
-              <li>
-                <a href="#programmFestival">программа</a>
-              </li>
-            </ul>
-          </Styled.Nav>
-          <TextUI text="hello 108" family='Regular' color='white' size={24} spacing="3px" hover/>
+          <a href="tel:+79631626238">
+            <TextUI family="Regular" color="white" size={24} hover>
+              +7 963 162 6238
+            </TextUI>
+          </a>
+        </Row>
 
+        <Row gap={16} mr={50}>
+          <a href="#footer">
+            <TextUI family="Regular" color="white" size={24} spacing="2px" hover>
+              о нас
+            </TextUI>
+          </a>
+
+          <a href="#newYear">
+            <TextUI family="Regular" color="white" size={24} spacing="2px" hover>
+              фестиваль
+            </TextUI>
+          </a>
+
+          <a href="#programmFestival">
+            <TextUI family="Regular" color="white" size={24} spacing="2px" hover>
+              программа
+            </TextUI>
+          </a>
         </Row>
       </Styled.WrapperHeader>
     </>

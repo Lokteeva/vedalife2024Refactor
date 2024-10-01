@@ -14,12 +14,14 @@ export const Text = styled.span<{
   uppercase?: string;
   spacing?: string;
   hover?: boolean;
+  bold?: boolean;
 }>`
   color: ${(props) => props.color && colorMap[props.color]};
   font-family: ${(props) => props.family};
   font-size: ${(props) => props.size && `${props.size}px`};
   text-transform: ${(props) => props.uppercase && 'uppercase'};
   letter-spacing: ${(props) => props.spacing};
+  font-weight: ${(props) => props.bold && "bold"};
 
   &:hover {
     scale: ${(props) => props.hover && "1.1"};

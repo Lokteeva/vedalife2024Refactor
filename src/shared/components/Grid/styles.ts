@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import type { ColProps, RowProps } from "./Grid.types";
-import { Align, Direction, JustifyContent, Wrap } from "./Grid.types";
+import type { ColProps, RowProps } from './Grid.types';
+import { Align, Direction, JustifyContent, Wrap } from './Grid.types';
 
 export const Row = styled.div<RowProps>((props) => {
   const {
@@ -10,31 +10,30 @@ export const Row = styled.div<RowProps>((props) => {
     gutter = 0,
     mb = 0,
     mt = 0,
+    ml = 0,
+    mr = 0,
     direction = Direction.row,
-    cg = 0,
-    rg = 0,
+    gap = 0,
     wrap = Wrap.nowrap,
-    width = "auto",
+    width = 'auto',
   } = props;
 
   const justifyContentMap = {
-    [JustifyContent.start]: "flex-start",
-    [JustifyContent.end]: "flex-end",
-    [JustifyContent.center]: "center",
-    [JustifyContent.around]: "space-around",
-    [JustifyContent.between]: "space-between",
+    [JustifyContent.start]: 'flex-start',
+    [JustifyContent.end]: 'flex-end',
+    [JustifyContent.center]: 'center',
+    [JustifyContent.around]: 'space-around',
+    [JustifyContent.between]: 'space-between',
   };
 
   const alignMap = {
-    [Align.top]: "flex-start",
-    [Align.middle]: "center",
-    [Align.bottom]: "flex-end",
-    [Align.baseline]: "baseline",
+    [Align.top]: 'flex-start',
+    [Align.middle]: 'center',
+    [Align.bottom]: 'flex-end',
+    [Align.baseline]: 'baseline',
   };
 
-  const margin = Array.isArray(gutter)
-    ? gutter.map((g) => g + "px").join(" ")
-    : gutter + "px";
+  const margin = Array.isArray(gutter) ? gutter.map((g) => g + 'px').join(' ') : gutter + 'px';
 
   return `
     display: flex;
@@ -43,8 +42,9 @@ export const Row = styled.div<RowProps>((props) => {
     align-items: ${alignMap[align]};
     margin-bottom: ${mb}px;
     margin-top: ${mt}px;
-    column-gap: ${cg}px;
-    row-gap: ${rg}px;
+    margin-left: ${ml}px;
+    margin-right: ${mr}px;
+    gap: ${gap}px;
     width: ${width};
 
     flex-wrap: ${wrap};
@@ -63,7 +63,7 @@ export const Row = styled.div<RowProps>((props) => {
 });
 
 export const Col = styled.div<ColProps>((props) => {
-  const width = props.span ? (100 * props.span) / 12 + "%" : "auto";
+  const width = props.span ? (100 * props.span) / 12 + '%' : 'auto';
 
   return `
     width: ${width};

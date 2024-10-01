@@ -30,8 +30,9 @@ export type RowProps = {
   direction?: keyof typeof Direction;
   mb?: number;
   mt?: number;
-  cg?: number;
-  rg?: number;
+  ml?: number;
+  mr?: number;
+  gap?: number;
   gutter?:
     | number
     | [number, number]
