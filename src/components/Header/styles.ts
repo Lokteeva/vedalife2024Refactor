@@ -15,7 +15,6 @@ export const WrapperHeader = styled.div`
   display: flex;
   align-items: center;
   font-size: calc(var(--index) * 0.9);
-  /* font-family: 'BebasNeueRegular'; */
 
 
   a {
@@ -29,8 +28,7 @@ export const Nav = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    text-transform: uppercase;
-    /* font-family: 'BebasNeueRegular'; */
+    /* text-transform: uppercase; */
     font-size: calc(var(--index) * 0.9);
     color: var(--white);
   }

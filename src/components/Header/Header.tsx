@@ -1,4 +1,4 @@
-import { ButtonSocial, IconInstagram, IconTelegram, IconVK, IconWA, Row } from '../../shared';
+import { ButtonSocial, IconInstagram, IconTelegram, IconVK, IconWA, Row, TextUI } from '../../shared';
 import * as Styled from './styles';
 
 export const Header = () => {
@@ -33,6 +33,8 @@ export const Header = () => {
               </li>
             </ul>
           </Styled.Nav>
+          <TextUI text="hello 108" family='Regular' color='white' size={24} spacing="3px" hover/>
+
         </Row>
       </Styled.WrapperHeader>
     </>
