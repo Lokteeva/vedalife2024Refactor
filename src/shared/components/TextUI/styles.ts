@@ -22,6 +22,7 @@ export const Text = styled.span<{
   text-transform: ${(props) => props.uppercase && 'uppercase'};
   letter-spacing: ${(props) => props.spacing};
   font-weight: ${(props) => props.bold && "bold"};
+  text-align: center;
 
   &:hover {
     cursor: ${(props) => props.hover && 'pointer'};

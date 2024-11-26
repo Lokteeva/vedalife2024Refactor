@@ -29,7 +29,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: var(--litePink);
+  /* background-color: var(--litePink); */
 }
 :root {
   --pink: rgb(208, 9, 128);

@@ -17,5 +17,7 @@ export const ButtonUI = styled.button`
     color: var(--pink);
     background-color: var(--white);
     font-family: 'Regular';
+    border: 1px solid black;
+    cursor: pointer;
   }
 `;

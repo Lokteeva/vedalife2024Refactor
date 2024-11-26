@@ -14,7 +14,7 @@ export const Header = () => {
     <>
       <Styled.Line />
       <Styled.WrapperHeader>
-        <Row  ml={50} gap={16}>
+        <Row ml={50} gap={16}>
           <ButtonSocial link="https://vk.com/vedalife_sochi">
             <IconVK />
           </ButtonSocial>
