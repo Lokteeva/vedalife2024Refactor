@@ -6,7 +6,7 @@ export const NewYear = () => {
     <Styled.Wrapper>
       <DateUI />
 
-      <TextUI color="white" family="Book" spacing="2px" size={50}>
+      <TextUI color="white" family="Book" spacing="4px" size={50} bold>
         Новогодний фестиваль
         <br /> в ашраме!
       </TextUI>
@@ -17,7 +17,7 @@ export const NewYear = () => {
 export const NewYearBlue = () => {
   return (
     <Styled.WrapperBlue>
-      <TextUI color="white" family="Book" spacing="2px" size={50}>
+      <TextUI color="white" family="Book" spacing="4px" size={60} bold>
         Спикеры фестиваля
       </TextUI>
       <DateBlueUI />

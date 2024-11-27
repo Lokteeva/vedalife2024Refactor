@@ -9,7 +9,7 @@ export const HomeBaner = () => {
       <Styled.ImageMobile src="./image/1000-700.jpg" alt="banner" />
 
       <Row justify="center" mt={24} direction="column" gap={10}>
-        <TextUI color="pink" family="Book" size={36} spacing="2px" bold>
+        <TextUI color="pink" family="Regular" size={36} spacing="2px" bold>
           Первые 10 мест по скидке {sail}
         </TextUI>
         <TextUI family="Book" size={28} spacing="2px">

@@ -1,15 +1,16 @@
 import IMG from '../../../public/image/12.jpg';
-import { ImageCircle, Row, TextUI } from '../../shared';
+import { linkTelega, linkWA } from '../../constants';
+import { ButtonUI, ImageCircle, Row, TextUI } from '../../shared';
 import * as Styled from './styles';
 
 export const ProgrammFestival = () => {
   return (
     <Styled.Wrapper>
       <ImageCircle src={IMG} alt="photo" size={450} />
-      <Row direction='column' gap={16}>
-      <TextUI family="Book" spacing="1.8px" size={32} color="pink" bold>
-        программа фестиваля
-      </TextUI>
+      <Row direction="column" gap={16}>
+        <TextUI family="Regular" spacing="1.8px" size={32} color="pink" bold>
+          программа фестиваля
+        </TextUI>
         <p>Встретьте Новый 2025 год в кругу светлых и приятных людей!</p>
         <strong>В программе фестиваля:</strong>
         <Styled.ul>
@@ -28,10 +29,14 @@ export const ProgrammFestival = () => {
           <li>🔹 Море, горы и солнце среди зимы</li>
         </Styled.ul>
         <strong>
-          Почетный гость фестиваля - Бхакти Расаяна Сагара Свами <br/>(настоящий монах, который
-          практикует более 30-ти лет)
+          Почетный гость фестиваля - Бхакти Расаяна Сагара Свами <br />
+          (настоящий монах, который практикует более 30-ти лет)
         </strong>
         <p>Есть вопросы? Напишите нам по кнопкам ниже</p>
+        <Row justify="center" gap={16} mt={24}>
+          <ButtonUI link={linkWA}>Написать в Whatsapp</ButtonUI>
+          <ButtonUI link={linkTelega}>Написать в Telegram</ButtonUI>
+        </Row>
       </Row>
     </Styled.Wrapper>
   );

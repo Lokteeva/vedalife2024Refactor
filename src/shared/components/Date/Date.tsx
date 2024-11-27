@@ -6,7 +6,7 @@ import * as Styled from './styles';
 export const DateUI = () => {
   return (
     <Row direction="column" mb={16}>
-      <TextUI size={110} color="white" family="Book" bold>
+      <TextUI size={120} color="white" family="Book" bold>
         28–4
       </TextUI>
 
@@ -21,7 +21,7 @@ export const DateUI = () => {
 export const DateBlueUI = () => {
   return (
     <Row direction="column" mb={16}>
-      <TextUI size={110} color="white" family="Book" bold>
+      <TextUI size={120} color="white" family="Book" bold>
         28–4
       </TextUI>
 

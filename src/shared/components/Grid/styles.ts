@@ -66,6 +66,7 @@ export const Col = styled.div<ColProps>((props) => {
   const width = props.span ? (100 * props.span) / 12 + '%' : 'auto';
 
   return `
+    line-height: 30px;
     width: ${width};
     max-width: ${width};
     flex-basis: ${width};

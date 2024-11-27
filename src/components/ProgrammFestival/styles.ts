@@ -1,19 +1,23 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  margin-top: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 150px;
+  margin-bottom: 24px;
+
+  @media (max-width: 1200px) {
+    gap: 50px;
+  }
 
   @media (max-width: 900px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    gap: 24px;
   }
 `;
 
 export const ul = styled.ul`
-list-style: none;
-`
+  list-style: none;
+`;
